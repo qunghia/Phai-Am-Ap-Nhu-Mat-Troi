@@ -383,6 +383,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   body {
+    overflow-x: hidden;
     overflow-y: auto;
   }
 
@@ -390,50 +391,82 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 34px 18px 48px;
+    padding: 28px 16px 50px;
   }
 
   .hero {
     order: 1;
     width: 100%;
-    max-width: 620px;
-    margin-bottom: 25px;
+    max-width: 430px;
+    margin: 0 auto 28px;
   }
 
   .question-cloud {
-    position: static;
+    position: relative;
+    inset: auto;
+
     order: 2;
+
     width: 100%;
-    max-width: 720px;
+    max-width: 520px;
+
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    pointer-events: auto;
   }
 
   .question-card {
     position: relative;
-    left: auto;
-    top: auto;
+
+    left: auto !important;
+    top: auto !important;
+
     width: 100%;
-    min-height: 105px;
-    transform: none;
-    animation: none;
+    min-height: 88px;
+
+    transform: none !important;
+
+    margin: 0 !important;
+
+    animation: none !important;
+
+    display: block;
   }
 
   .question-card:hover,
   .question-card:focus-visible {
-    transform: translateY(-3px);
+    transform: translateY(-2px) !important;
   }
 }
 
 @media (max-width: 560px) {
   .hero {
-    padding: 38px 22px;
-    border-radius: 30px;
+    width: 100%;
+    padding: 30px 22px;
+    border-radius: 28px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cute-face {
+    font-size: 20px;
+    margin-top: 24px;
   }
 
   .question-cloud {
     grid-template-columns: 1fr;
+  }
+
+  .question-card {
+    width: 100%;
+    min-height: 84px;
   }
 
   .answer-modal {
@@ -445,7 +478,6 @@ textarea:focus {
     align-items: flex-end;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
