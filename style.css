@@ -178,37 +178,41 @@ textarea {
 
 .question-card {
   position: absolute;
+
   left: var(--x);
   top: var(--y);
-  width: clamp(190px, 14vw, 230px);
-  min-height: 92px;
-  transform:
-    translate(-50%, -50%)
-    rotate(var(--rotate));
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 24px;
-  padding: 18px 20px 26px;
+
+  width: clamp(180px, 14vw, 225px);
+  min-height: 86px;
+
+  transform: translate(-50%, -50%) rotate(var(--rotate));
+
+  border: 1px solid rgba(0, 0, 0, 0.035);
+  border-radius: 22px;
+
+  padding: 17px 19px 25px;
+
   background: var(--card-bg);
-  box-shadow:
-    0 14px 35px rgba(101, 74, 83, 0.11);
-  color: #655157;
-  font-size: 15px;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+
+  color: #493e42;
+
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.4;
+
   text-align: left;
-  display: flex;
-  align-items: center;
+
   cursor: pointer;
   pointer-events: auto;
+
   transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    opacity 180ms ease;
+    transform 220ms ease,
+    box-shadow 220ms ease;
+
   animation:
-    floatCard
-    var(--duration)
-    ease-in-out
-    var(--delay)
-    infinite alternate;
+    floatCard var(--duration) ease-in-out var(--delay) infinite alternate;
 }
 
 .question-card::after {
@@ -222,8 +226,14 @@ textarea {
 
 .question-card:hover,
 .question-card:focus-visible {
-  transform: translate(-50%, -50%) rotate(0deg) scale(1.055);
-  box-shadow: 0 20px 45px rgba(101, 74, 83, 0.18);
+  transform:
+    translate(-50%, -50%)
+    rotate(0deg)
+    scale(1.045)
+    translateY(-4px);
+
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.11);
+
   outline: none;
 }
 
