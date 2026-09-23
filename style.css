@@ -104,17 +104,18 @@ textarea {
   font-family: "Pacifico", cursive;
   font-size: clamp(38px, 4.8vw, 62px);
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #b86f80;
 }
 
 .cute-face {
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
   display: block;
-  margin-top: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
   line-height: 1;
+  margin-top: 18px;
+  color: #b86f80;
 }
 
 .hero p {
@@ -146,24 +147,35 @@ textarea {
   position: absolute;
   left: var(--x);
   top: var(--y);
-  width: clamp(150px, 16vw, 235px);
-  min-height: 82px;
-  transform: translate(-50%, -50%) rotate(var(--rotate));
+  width: clamp(190px, 14vw, 230px);
+  min-height: 92px;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--rotate));
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 24px;
-  padding: 16px 18px;
+  padding: 18px 20px 26px;
   background: var(--card-bg);
-  box-shadow: 0 14px 35px rgba(101, 74, 83, 0.11);
+  box-shadow:
+    0 14px 35px rgba(101, 74, 83, 0.11);
   color: #655157;
-  line-height: 1.35;
+  font-size: 15px;
+  line-height: 1.4;
   text-align: left;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   pointer-events: auto;
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
     opacity 180ms ease;
-  animation: floatCard var(--duration) ease-in-out var(--delay) infinite alternate;
+  animation:
+    floatCard
+    var(--duration)
+    ease-in-out
+    var(--delay)
+    infinite alternate;
 }
 
 .question-card::after {
@@ -193,11 +205,11 @@ textarea {
 
 @keyframes floatCard {
   from {
-    margin-top: -5px;
+    margin-top: -3px;
   }
 
   to {
-    margin-top: 9px;
+    margin-top: 5px;
   }
 }
 
