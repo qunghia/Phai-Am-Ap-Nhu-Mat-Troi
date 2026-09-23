@@ -108,6 +108,15 @@ textarea {
   color: #b86f80;
 }
 
+.cute-face {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.45em;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 .hero p {
   margin: 24px auto 0;
   max-width: 410px;
