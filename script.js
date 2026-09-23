@@ -1,6 +1,6 @@
 // 1) Deploy your Google Apps Script as a Web App.
 // 2) Paste the /exec URL below.
-const APPS_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyn07o08Ihp6jj9HPd_Kh4hzppBabVEbh3A13RV7GvnPvjQ8pdtnTi1UOtSutCEbOP8/exec";
 
 const questions = [
   { id: "q01", text: "how are you todayy?", x: 15, y: 12, rotate: -4 },
