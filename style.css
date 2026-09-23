@@ -53,33 +53,33 @@ textarea {
   position: fixed;
   z-index: 0;
   border-radius: 999px;
-  filter: blur(18px);
-  opacity: 0.55;
+  filter: blur(80px);
+  opacity: 0.18;
   pointer-events: none;
 }
 
 .glow-one {
-  width: 260px;
-  height: 260px;
-  left: -80px;
-  top: 20%;
-  background: var(--peach);
+  width: 380px;
+  height: 380px;
+  left: -170px;
+  top: 25%;
+  background: #ffb7c8;
 }
 
 .glow-two {
-  width: 300px;
-  height: 300px;
-  right: -110px;
-  top: 8%;
-  background: var(--lavender);
+  width: 420px;
+  height: 420px;
+  right: -190px;
+  top: 4%;
+  background: #cbbcff;
 }
 
 .glow-three {
-  width: 240px;
-  height: 240px;
-  right: 14%;
-  bottom: -90px;
-  background: var(--mint);
+  width: 380px;
+  height: 380px;
+  right: 18%;
+  bottom: -230px;
+  background: #bfe2ca;
 }
 
 .page-shell {
