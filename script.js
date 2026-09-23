@@ -150,20 +150,6 @@ const questions = [
 
 ];
 
-
-  // BOTTOM CENTRE
-
-  {
-    id: "q17",
-    text: "if I turned into a chair, would you sit on me?",
-    x: 50,
-    y: 91,
-    rotate: 1
-  }
-
-];
-
-
 // =====================================================
 // CARD COLORS
 // =====================================================
