@@ -1,14 +1,5 @@
-// =====================================================
-// GOOGLE APPS SCRIPT
-// =====================================================
-
 const APPS_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbyn07o08Ihp6jj9HPd_Kh4hzppBabVEbh3A13RV7GvnPvjQ8pdtnTi1UOtSutCEbOP8/exec";
-
-
-// =====================================================
-// MESSAGES
-// =====================================================
 
 // Muốn đổi câu hiện sau khi gửi thì chỉ sửa dòng này.
 const SUCCESS_MESSAGE =
@@ -31,7 +22,7 @@ const questions = [
 
   {
     id: "q02",
-    text: "how are you feeling, really?",
+    text: "did you sleep well last night?",
     x: 49,
     y: 9,
     rotate: 2
@@ -55,7 +46,7 @@ const questions = [
 
   {
     id: "q05",
-    text: "did anything make your heart feel heavy today?",
+    text: "have you eaten anything good today?",
     x: 90,
     y: 36,
     rotate: -3
@@ -119,7 +110,7 @@ const questions = [
 
   {
     id: "q13",
-    text: "what does a peaceful life look like to you?",
+    text: "when you’re upset, do you want space or company?",
     x: 24,
     y: 74,
     rotate: -3
@@ -135,7 +126,7 @@ const questions = [
 
   {
     id: "q15",
-    text: "is there anything you've been scared to say out loud?",
+    text: "would you still talk to me me if I was a worm?",
     x: 22,
     y: 50,
     rotate: 4
@@ -146,6 +137,14 @@ const questions = [
     text: "what's one thing you want me to know today?",
     x: 78,
     y: 50,
+    rotate: -4
+  }
+
+  {
+    id: "q17",
+    text: "if I turned into a chair, would you sit on me?",
+    x: 26,
+    y: 45,
     rotate: -4
   }
 
