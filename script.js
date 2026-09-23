@@ -117,7 +117,7 @@ function updateCharacterCount() {
   characterCount.textContent = `${answerInput.value.length} / 2000`;
 }
 
-function showToast(message = "your answer found its way to me ♡") {
+function showToast(message = "sentttt. have a nice day nhe embekim (✿◕‿◕✿)") {
   toast.textContent = message;
   toast.classList.add("show");
 
