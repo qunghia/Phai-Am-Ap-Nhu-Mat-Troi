@@ -4,44 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#fff7f8" />
+
   <title>for dấu yêu ♡</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <div class="background-glow glow-one"></div>
   <div class="background-glow glow-two"></div>
   <div class="background-glow glow-three"></div>
 
   <main class="page-shell">
-    <section class="question-cloud" id="questionCloud" aria-label="Questions"></section>
+
+    <section
+      class="question-cloud"
+      id="questionCloud"
+      aria-label="Questions"
+    ></section>
 
     <section class="hero">
+
       <p class="tiny-heart">♡</p>
+
       <h1>
         dấu yêu ơiii
         <span class="cute-face">(～￣▽￣)～</span>
       </h1>
+
       <p>
         à nhonn :) I left a few little questions here for you.<br />
         em bé can answer whichever one feels right today.
       </p>
-      <span class="hero-note">no pressure ~.~. just want to knau u more!!</span>
+
+      <span class="hero-note">
+        no pressure ~.~. just want to knau u more!!
+      </span>
+
     </section>
+
   </main>
 
-  <div class="modal-backdrop" id="modalBackdrop" hidden>
-    <section class="answer-modal" role="dialog" aria-modal="true" aria-labelledby="modalQuestion">
-      <button class="close-button" id="closeModal" type="button" aria-label="Close">×</button>
 
-      <p class="modal-kicker">tell me ♡</p>
+  <!-- ANSWER MODAL -->
+
+  <div
+    class="modal-backdrop"
+    id="modalBackdrop"
+    hidden
+  >
+
+    <section
+      class="answer-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalQuestion"
+    >
+
+      <button
+        class="close-button"
+        id="closeModal"
+        type="button"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <p class="modal-kicker">
+        tell me ♡
+      </p>
+
       <h2 id="modalQuestion"></h2>
 
       <form id="answerForm">
+
         <textarea
           id="answerInput"
           name="answer"
@@ -51,17 +96,38 @@
         ></textarea>
 
         <div class="modal-footer">
-          <span id="characterCount">0 / 2000</span>
-          <button class="send-button" type="submit">send it ♡</button>
+
+          <span id="characterCount">
+            0 / 2000
+          </span>
+
+          <button
+            class="send-button"
+            type="submit"
+          >
+            send it ♡
+          </button>
+
         </div>
+
       </form>
+
     </section>
+
   </div>
 
-  <div class="toast" id="toast" role="status" aria-live="polite">
-    sentttt. have a nice day nhe embekim (✿◕‿◕✿)
-  </div>
+
+  <!-- TOAST -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
