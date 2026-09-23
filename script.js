@@ -117,8 +117,11 @@ function updateCharacterCount() {
   characterCount.textContent = `${answerInput.value.length} / 2000`;
 }
 
-function showToast(message = "sentttt. have a nice day nhe embekim (✿◕‿◕✿)") {
-  toast.textContent = message;
+function showToast(message) {
+  if (message) {
+    toast.textContent = message;
+  }
+
   toast.classList.add("show");
 
   window.clearTimeout(showToast.timer);
@@ -186,7 +189,7 @@ answerForm.addEventListener("submit", (event) => {
   // UI phản hồi ngay, không cần chờ Apps Script
   markAnswered(questionId);
   closeModal();
-  showToast("senttt. have a nice day nhe embekim (✿◕‿◕✿)");
+  showToast();
 });
 
 renderQuestions();
