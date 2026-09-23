@@ -142,21 +142,31 @@ textarea {
 }
 
 .hero p {
-  margin: 24px auto 0;
-  max-width: 410px;
+  margin: 34px auto 0;
+
+  max-width: 390px;
+
   font-size: 15px;
-  line-height: 1.7;
-  color: var(--muted);
+  line-height: 1.65;
+
+  color: #74686c;
 }
 
 .hero-note {
   display: inline-block;
-  margin-top: 18px;
-  padding: 8px 14px;
+
+  margin-top: 20px;
+
+  padding: 9px 17px;
+
   border-radius: 999px;
-  background: var(--rose-light);
-  color: #a76e7c;
+
+  background: #ffe3e9;
+
+  color: #ad6678;
+
   font-size: 12px;
+  font-weight: 500;
 }
 
 .question-cloud {
