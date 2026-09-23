@@ -12,147 +12,143 @@ const SUCCESS_MESSAGE =
 
 const questions = [
 
-  // TOP ROW
-
   {
     id: "q01",
     text: "how are you todayy?",
-    x: 12,
-    y: 11,
-    rotate: -3
+    x: 14,
+    y: 13,
+    rotate: -4
   },
 
   {
     id: "q02",
     text: "did you sleep well last night?",
-    x: 34,
-    y: 9,
+    x: 47,
+    y: 8,
     rotate: 2
   },
 
   {
     id: "q03",
     text: "how's the weather at your place rn?",
-    x: 66,
-    y: 9,
-    rotate: 3
+    x: 84,
+    y: 14,
+    rotate: 4
   },
 
   {
     id: "q04",
     text: "what made you smile today?",
-    x: 88,
-    y: 11,
-    rotate: -2
+    x: 8,
+    y: 34,
+    rotate: 3
   },
-
-
-  // FAR LEFT
 
   {
     id: "q05",
     text: "have you eaten anything good today?",
-    x: 8,
-    y: 31,
-    rotate: 2
+    x: 91,
+    y: 35,
+    rotate: -3
   },
 
   {
     id: "q06",
     text: "what do you need more of lately?",
     x: 8,
-    y: 52,
+    y: 64,
     rotate: -2
   },
 
   {
     id: "q07",
     text: "when do you feel most loved?",
-    x: 8,
-    y: 73,
-    rotate: 2
+    x: 92,
+    y: 63,
+    rotate: 3
   },
-
-
-  // INNER LEFT
 
   {
     id: "q08",
     text: "what makes you feel safe with someone?",
-    x: 25,
-    y: 29,
-    rotate: -2
+    x: 15,
+    y: 88,
+    rotate: 3
   },
 
   {
     id: "q09",
     text: "what do you think is the most important thing in a relationship?",
-    x: 25,
-    y: 52,
-    rotate: 2
+    x: 50,
+    y: 92,
+    rotate: -2
   },
 
   {
     id: "q10",
     text: "what's something you wish people understood about you?",
-    x: 25,
-    y: 75,
-    rotate: -2
+    x: 83,
+    y: 86,
+    rotate: -4
   },
-
-
-  // INNER RIGHT
 
   {
     id: "q11",
     text: "what's been on your mind lately?",
-    x: 75,
-    y: 29,
+    x: 25,
+    y: 25,
     rotate: 2
   },
 
   {
     id: "q12",
     text: "what are you proud of yourself for recently?",
-    x: 75,
-    y: 52,
+    x: 74,
+    y: 26,
     rotate: -2
   },
 
   {
     id: "q13",
     text: "when you’re upset, do you want space or company?",
-    x: 75,
+    x: 22,
     y: 75,
-    rotate: 2
+    rotate: -3
   },
-
-
-  // FAR RIGHT
 
   {
     id: "q14",
     text: "what do you want us to experience together someday?",
-    x: 92,
-    y: 31,
-    rotate: -2
+    x: 77,
+    y: 74,
+    rotate: 2
   },
 
   {
     id: "q15",
     text: "would you still talk to me if I was a worm?",
-    x: 92,
-    y: 52,
-    rotate: 2
+    x: 17,
+    y: 50,
+    rotate: 4
   },
 
   {
     id: "q16",
     text: "what's one thing you want me to know today?",
-    x: 92,
-    y: 73,
-    rotate: -2
+    x: 82,
+    y: 49,
+    rotate: -4
   },
+
+  {
+    id: "q17",
+    text: "if I turned into a chair, would you sit on me?",
+    x: 29,
+    y: 44,
+    rotate: -3
+  }
+
+];
 
 
   // BOTTOM CENTRE
