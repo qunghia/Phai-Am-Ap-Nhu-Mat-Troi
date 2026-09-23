@@ -126,7 +126,7 @@ const questions = [
 
   {
     id: "q15",
-    text: "would you still talk to me me if I was a worm?",
+    text: "would you still talk to me if I was a worm?",
     x: 22,
     y: 50,
     rotate: 4
@@ -138,7 +138,7 @@ const questions = [
     x: 78,
     y: 50,
     rotate: -4
-  }
+  },
 
   {
     id: "q17",
