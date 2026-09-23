@@ -143,7 +143,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-answerForm.addEventListener("submit", async (event) => {
+answerForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   if (!activeQuestion) return;
@@ -159,43 +159,34 @@ answerForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  const sendButton = answerForm.querySelector(".send-button");
-  const originalButtonText = sendButton.textContent;
-
-  sendButton.disabled = true;
-  sendButton.textContent = "sending...";
+  const questionId = activeQuestion.id;
+  const questionText = activeQuestion.text;
 
   const payload = new URLSearchParams({
     sessionId: getSessionId(),
-    questionId: activeQuestion.id,
-    question: activeQuestion.text,
-    answer,
+    questionId: questionId,
+    question: questionText,
+    answer: answer,
     page: window.location.href,
     userAgent: navigator.userAgent
   });
 
-  try {
-    // no-cors is deliberate here: it avoids browser CORS issues with
-    // Google Apps Script while still allowing the POST request to arrive.
-    await fetch(APPS_SCRIPT_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-      },
-      body: payload.toString()
-    });
+  // Gửi dữ liệu ngầm sang Google Sheet
+  fetch(APPS_SCRIPT_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+    },
+    body: payload.toString()
+  }).catch((error) => {
+    console.error("Send error:", error);
+  });
 
-    markAnswered(activeQuestion.id);
-    closeModal();
-    showToast();
-  } catch (error) {
-    console.error(error);
-    showToast("something went wrong — try again in a sec");
-  } finally {
-    sendButton.disabled = false;
-    sendButton.textContent = originalButtonText;
-  }
+  // UI phản hồi ngay, không cần chờ Apps Script
+  markAnswered(questionId);
+  closeModal();
+  showToast("senttt. have a nice day nhe embekim (✿◕‿◕✿)");
 });
 
 renderQuestions();
