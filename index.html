@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7f8" />
+  <title>Hello dấu yêu ơi ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div class="background-glow glow-three"></div>
+
+  <main class="page-shell">
+    <section class="question-cloud" id="questionCloud" aria-label="Questions"></section>
+
+    <section class="hero">
+      <p class="tiny-heart">♡</p>
+      <h1>hello dấu yêu ơi</h1>
+      <p>
+        i left a few little questions here for you.<br />
+        answer whichever one feels right today.
+      </p>
+      <span class="hero-note">no pressure. just you being you.</span>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="answer-modal" role="dialog" aria-modal="true" aria-labelledby="modalQuestion">
+      <button class="close-button" id="closeModal" type="button" aria-label="Close">×</button>
+
+      <p class="modal-kicker">tell me ♡</p>
+      <h2 id="modalQuestion"></h2>
+
+      <form id="answerForm">
+        <textarea
+          id="answerInput"
+          name="answer"
+          placeholder="type whatever is on your mind..."
+          maxlength="2000"
+          required
+        ></textarea>
+
+        <div class="modal-footer">
+          <span id="characterCount">0 / 2000</span>
+          <button class="send-button" type="submit">send it ♡</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    your answer found its way to me ♡
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
