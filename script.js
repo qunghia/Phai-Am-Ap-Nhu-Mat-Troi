@@ -30,7 +30,7 @@ const questions = [
 
   {
     id: "q03",
-    text: "how's the weather at your place rn?",
+    text: "how's the weather over there?",
     x: 84,
     y: 14,
     rotate: 4
