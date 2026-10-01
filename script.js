@@ -30,7 +30,7 @@ const questions = [
 
   {
     id: "q03",
-    text: "how's the weather over there?",
+    text: "if you could replace rain with something else falling from the sky, what would you choose?",
     x: 84,
     y: 12,
     rotate: 4
@@ -46,7 +46,7 @@ const questions = [
 
   {
     id: "q05",
-    text: "have you eaten anything good today?",
+    text: "if aliens asked you to represent humanity, what’s the first thing you’d show them?",
     x: 92,
     y: 32,
     rotate: -3
@@ -78,7 +78,7 @@ const questions = [
 
   {
     id: "q09",
-    text: "what do you think is the most important thing in a relationship?",
+    text: "hypothetically… if someone was gonna ask you ‘can I be your boyfriend?’, what kind of date would you want it to be?",
     x: 50,
     y: 90,
     rotate: -2
@@ -102,7 +102,7 @@ const questions = [
 
   {
     id: "q12",
-    text: "what are you proud of yourself for recently?",
+    text: "what’s something you can talk about for hours?",
     x: 74,
     y: 23,
     rotate: -2
@@ -118,7 +118,7 @@ const questions = [
 
   {
     id: "q14",
-    text: "what do you want us to experience together someday?",
+    text: "what’s something completely random that annoys you?",
     x: 77,
     y: 73,
     rotate: 2
