@@ -15,15 +15,15 @@ const questions = [
   {
     id: "q01",
     text: "how are you todayy?",
-    x: 14,
-    y: 13,
+    x: 13,
+    y: 11,
     rotate: -4
   },
 
   {
     id: "q02",
     text: "did you sleep well last night?",
-    x: 47,
+    x: 45,
     y: 8,
     rotate: 2
   },
@@ -32,23 +32,23 @@ const questions = [
     id: "q03",
     text: "how's the weather over there?",
     x: 84,
-    y: 14,
+    y: 12,
     rotate: 4
   },
 
   {
     id: "q04",
     text: "what made you smile today?",
-    x: 8,
-    y: 34,
+    x: 7,
+    y: 31,
     rotate: 3
   },
 
   {
     id: "q05",
     text: "have you eaten anything good today?",
-    x: 91,
-    y: 35,
+    x: 92,
+    y: 32,
     rotate: -3
   },
 
@@ -56,7 +56,7 @@ const questions = [
     id: "q06",
     text: "what do you need more of lately?",
     x: 8,
-    y: 64,
+    y: 61,
     rotate: -2
   },
 
@@ -64,7 +64,7 @@ const questions = [
     id: "q07",
     text: "when do you feel most loved?",
     x: 92,
-    y: 63,
+    y: 61,
     rotate: 3
   },
 
@@ -72,7 +72,7 @@ const questions = [
     id: "q08",
     text: "what makes you feel safe with someone?",
     x: 15,
-    y: 88,
+    y: 87,
     rotate: 3
   },
 
@@ -80,14 +80,14 @@ const questions = [
     id: "q09",
     text: "what do you think is the most important thing in a relationship?",
     x: 50,
-    y: 92,
+    y: 90,
     rotate: -2
   },
 
   {
     id: "q10",
     text: "what's something you wish people understood about you?",
-    x: 83,
+    x: 84,
     y: 86,
     rotate: -4
   },
@@ -95,8 +95,8 @@ const questions = [
   {
     id: "q11",
     text: "what's been on your mind lately?",
-    x: 25,
-    y: 25,
+    x: 24,
+    y: 23,
     rotate: 2
   },
 
@@ -104,7 +104,7 @@ const questions = [
     id: "q12",
     text: "what are you proud of yourself for recently?",
     x: 74,
-    y: 26,
+    y: 23,
     rotate: -2
   },
 
@@ -112,7 +112,7 @@ const questions = [
     id: "q13",
     text: "when you’re upset, do you want space or company?",
     x: 22,
-    y: 75,
+    y: 73,
     rotate: -3
   },
 
@@ -120,15 +120,15 @@ const questions = [
     id: "q14",
     text: "what do you want us to experience together someday?",
     x: 77,
-    y: 74,
+    y: 73,
     rotate: 2
   },
 
   {
     id: "q15",
     text: "would you still talk to me if I was a worm?",
-    x: 17,
-    y: 50,
+    x: 16,
+    y: 47,
     rotate: 4
   },
 
@@ -136,7 +136,7 @@ const questions = [
     id: "q16",
     text: "what's one thing you want me to know today?",
     x: 82,
-    y: 49,
+    y: 47,
     rotate: -4
   },
 
@@ -144,7 +144,7 @@ const questions = [
     id: "q17",
     text: "if I turned into a chair, would you sit on me?",
     x: 29,
-    y: 44,
+    y: 41,
     rotate: -3
   }
 
