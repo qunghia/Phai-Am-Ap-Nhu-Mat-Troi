@@ -182,7 +182,7 @@ textarea {
   left: var(--x);
   top: var(--y);
 
-  width: clamp(180px, 14vw, 225px);
+  width: clamp(175px, 13vw, 215px);
   min-height: 86px;
 
   transform: translate(-50%, -50%) rotate(var(--rotate));
