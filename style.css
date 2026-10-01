@@ -1,8 +1,8 @@
 :root {
-  --bg: #f7f7f8;
+  --bg: #ffffff;
 
-  --text: #3f3538;
-  --muted: #75686c;
+  --text: #3f3a3c;
+  --muted: #736d70;
 
   --pink: #ffd9e2;
   --yellow: #ffedc7;
@@ -10,13 +10,13 @@
   --green: #d8eedf;
   --orange: #ffd8c2;
 
-  --rose: #bf7185;
-  --rose-light: #ffe3e9;
+  --rose: #b97a89;
+  --rose-light: #f8e6eb;
 
   --white: #ffffff;
 
   --shadow:
-    0 12px 30px rgba(0, 0, 0, 0.07);
+    0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  background: #f7f7f8;
+  background: #ffffff;
 
   color: var(--text);
 
@@ -50,12 +50,14 @@ textarea {
 }
 
 .background-glow {
-  position: fixed;
+  display: none;
+  /* position: fixed;
   z-index: 0;
   border-radius: 999px;
   filter: blur(80px);
   opacity: 0.18;
   pointer-events: none;
+  */
 }
 
 .glow-one {
@@ -100,13 +102,13 @@ textarea {
 
   text-align: center;
 
-  border: 1px solid #eeeeef;
-  border-radius: 32px;
+  border: 1px solid #ededee;
+  border-radius: 28px;
 
   background: #ffffff;
 
   box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.08);
+    0 14px 35px rgba(0, 0, 0, 0.06);
 }
 
 .tiny-heart {
@@ -183,18 +185,18 @@ textarea {
   top: var(--y);
 
   width: clamp(175px, 13vw, 215px);
-  min-height: 86px;
+  min-height: 84px;
 
   transform: translate(-50%, -50%) rotate(var(--rotate));
 
-  border: 1px solid rgba(0, 0, 0, 0.035);
-  border-radius: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 
-  padding: 17px 19px 25px;
+  padding: 16px 18px 24px;
 
   background: var(--card-bg);
 
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 
   color: #493e42;
 
@@ -208,8 +210,9 @@ textarea {
   pointer-events: auto;
 
   transition:
-    transform 220ms ease,
-    box-shadow 220ms ease;
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    opacity 0.18s ease;
 
   animation:
     floatCard var(--duration) ease-in-out var(--delay) infinite alternate;
@@ -229,10 +232,9 @@ textarea {
   transform:
     translate(-50%, -50%)
     rotate(0deg)
-    scale(1.045)
-    translateY(-4px);
+    scale(1.03)
 
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09);
 
   outline: none;
 }
